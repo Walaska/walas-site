@@ -73,12 +73,12 @@ export default function Terminal() {
                     </div>
                     <p className="text-center w-4/5 pt-1">stranger@localhost: ~/</p>
                 </div>
-                <div className="border-x-2 border-black relative flex flex-col h-full items-center bg-pink-900 p-0 sm:w-2/3 w-full h-96 flex-col-reverse overflow-auto">
+                <div className="border-x-2 border-black relative flex flex-col h-full items-center bg-cyan-900/20 p-0 sm:w-2/3 w-full h-96 flex-col-reverse overflow-auto">
                     <div className="mx-auto w-full flex flex-col self-end p-1 text-slate-200 whitespace-pre-line p-1 text-slate-200 font-medium items-start">
                         {content.map(paragraph => paragraph)}
                     </div>
                 </div>
-                <div className="border-x-2 border-b-2 border-black mx-auto w-full flex rounded-b-lg relative sm:w-2/3 bg-pink-900 font-medium">
+                <div className="border-x-2 border-b-2 border-black mx-auto w-full flex rounded-b-lg relative sm:w-2/3 bg-cyan-800/50 font-medium">
                     <p className="pr-1 pl-1 text-slate-200"><span className="text-green-400">stranger@localhost:~$</span></p>
                     <input onChange={e=>setInput(e.target.value)} onKeyUp={enterEvent} value={input} id="terminal_text" name="terminal_text" className="text-slate-200 flex-1 border-none bg-transparent outline-none " />
                 </div>

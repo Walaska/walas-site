@@ -8,7 +8,7 @@ import Terminal from './components/Terminal';
 
 function App() {
   return (
-    <main className='text-gray-400 bg-gray-900 '>
+    <main className='text-gray-400 bg-zinc-900 '>
       <Nav />
       <About />
       <Terminal />

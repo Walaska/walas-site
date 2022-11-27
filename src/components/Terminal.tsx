@@ -3,7 +3,7 @@ import { MinusIcon } from "@heroicons/react/24/solid";
 
 export default function Terminal() {
     const [input, setInput] = React.useState("");
-    const [content, setContent] = React.useState([<p><span className="text-green-400">stranger@stranger:~$ </span>ssh -i 'walaskey.pem' stranger@127.0.0.1 -p 4433<br/>{new Date().toLocaleString()}<br/>Welcome to scuffed Ubuntu 22.04 terminal<br/>You can use this CLI to learn more about me!<br/>Use "commands" to see what you can do here<br /><br/></p>])
+    const [content, setContent] = React.useState([<p><span className="text-green-400">stranger@stranger:~$ </span>ssh -i 'walaskey.pem' stranger@127.0.0.1 -p 4433<br/>{new Date().toLocaleString()}<br/>Welcome to scuffed Ubuntu 22.04 terminal<br/>You can use this CLI to learn more about me!<br/>Use "commands" to see what you can do here<br/><br/></p>])
 
     const enterEvent = (e: React.KeyboardEvent) => {
         if (e.key == "Enter") {
@@ -18,10 +18,10 @@ export default function Terminal() {
                     setContent(prev => [...prev, <p><br/><span className="text-green-400">stranger@localhost:~$ </span>cat random.txt<br/>did you really thing there would be something here...&#128563;<br/>well now that you are here, you can contact me using the form below &#129303;</p>]);
                     break;
                 case "commands":
-                    setContent(prev => [...prev, <p><span className="text-green-400">stranger@localhost:~$ </span>commands<br/>commands<br/>ls<br/>info<br/>git<br/>hello<br/>feedback<br/>contact<br/>echo<br/>cat</p>]);
+                    setContent(prev => [...prev, <p><span className="text-green-400">stranger@localhost:~$ </span>commands<br/>commands<br/>ls<br/>info<br/>git<br/>hello<br/>contact<br/>echo<br/>cat</p>]);
                     break;
                 case "info":
-                    setContent(prev => [...prev, <p><span className="text-green-400">stranger@localhost:~$ </span>info<br/>Hey, I don't know what the fuck to write here because neya said im stupid af</p>]);
+                    setContent(prev => [...prev, <p><span className="text-green-400">stranger@localhost:~$ </span>info<br/>Hey, I don't know what to write here but this is here just to take some space</p>]);
                     break;
                 case "git":
                     setContent(prev => [...prev, <p><span className="text-green-400">stranger@localhost:~$ </span>git<br/>Sorry, you can't commit anything here but you can checkout my GitHub account:<br/>https://github.com/Walaska</p>]);
